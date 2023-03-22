@@ -102,9 +102,6 @@ fetch(url)
 )
 
  dateAndTime = () => {
-	// const today = new Date();
-	// let date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-	// return date;
 	const today = new Date();
   	const options = {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
