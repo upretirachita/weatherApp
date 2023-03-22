@@ -4,11 +4,13 @@ const msg = document.querySelector('.form-msg');
 const citiesList = document.querySelector('.cities');
 
 
+
 //API KEY 
-const apiKey = 'getYouOwnTokenFromWeatherAppAPI;
+const apiKey = 'getYouOwnTokenFromWeatherAppAPI(api.openweathermap);
 
 
 form.addEventListener('submit', event => {
+	
 	// Prevent default form submission
 	event.preventDefault()
 
@@ -20,8 +22,10 @@ form.addEventListener('submit', event => {
 	let inputVal = input.value
 
 	// Check if there's already a city that matches the search criteria
+	
 	const listItemsArray = Array.from(citiesList.querySelectorAll('.cities li'))
     // console.log(listItemArray);
+	
     // If same city exist while searching
 	if (listItemsArray.length > 0) {
 		const filerItemArr = listItemsArray.filter(el => {
@@ -41,6 +45,7 @@ form.addEventListener('submit', event => {
 					content = `${cityName},${cityCountry}`
 				}
 			} else {
+				
 				// Only the <city> format 
 				content = cityName
 			}
@@ -56,6 +61,7 @@ form.addEventListener('submit', event => {
             return
         }
 	}
+	
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`
 fetch(url)
 		.then(response => response.json())
@@ -95,8 +101,9 @@ fetch(url)
 
     msg.textContent = ''
 
-	form.reset()
-	input.focus()
+	form.reset();
+	
+	input.focus();
 	
 }
 )
