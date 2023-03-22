@@ -1,7 +1,7 @@
 # weatherApp
  This app display weather data  from any city/country in the world using the OpenWeatherMap! API.
- #screenshot
  
+ #screenshot
  ![weatherApp1](https://user-images.githubusercontent.com/29287817/226905019-a5a8eb03-2333-4490-afce-7f1f987ac35a.JPG)
 ![weatherApp2](https://user-images.githubusercontent.com/29287817/226905026-5e3870d3-9972-433f-b989-62fd657b1a71.JPG)
 
