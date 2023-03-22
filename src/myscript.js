@@ -5,7 +5,7 @@ const citiesList = document.querySelector('.cities');
 
 
 //API KEY 
-const apiKey = '9cfb3ab37d01c8e64ef9781455c01159';
+const apiKey = 'getYouOwnTokenFromWeatherAppAPI;
 
 
 form.addEventListener('submit', event => {
