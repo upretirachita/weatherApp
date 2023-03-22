@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./src/mystyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="heading-section">
+            <h1 class="left-heading-section">weatherAPP</h1>
+            <h1>Please enter the name of the city on the  to allow us to get your location</h1>
+        </div>
+        
+        <form action="" id="search-me-form">
+            <label for="search-term">Search for the City!</label> 
+            <div class="form-row">
+                <input type="text" placeholder="search for weather" name="search-term" id="search-term" autofocus>
+                <button type="submit"><img src="./images/plus-circle.svg" alt="Plus Circle"></button>
+                <p class="form-msg"></p>
+            </div>
+        </form>
+    </header>
+    <section>
+        <ul class="cities">
+            <!-- <li>
+                <div>
+                    <img src="./images/01d.svg" alt="Demo">
+                </div>
+                <div>
+                    <h1>Temperature<sup>21°C</sup></h1>
+                    <p class="city-condition">Sunny</p>
+                    <h2><span class="city-name">Helsinki</span><span class="city-country">FI</span></h2>
+                </div>
+            </li> -->
+        </ul>
+    </section>
+    <footer><p><small>Designed by Rachita</small></p></footer>
+    </div>
+</body>
+<script src="./src/icons.js"></script>
+<script src="./src/myscript.js"></script>
+</html>
